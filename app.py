@@ -7,7 +7,7 @@ st.header("🧵 Material")
 material = st.selectbox("Escolha o filamento", ["PLA", "PETG"])
 
 if material == "PLA":
-    preco_rolo = st.number_input("Preço do rolo PLA (€)", value=17.0)
+    preco_rolo = st.number_input("Preço do rolo PLA (€)", value=19.0)
 else:
     preco_rolo = st.number_input("Preço do rolo PETG (€)", value=22.0)
 
@@ -17,7 +17,7 @@ gramas_usadas = st.number_input("Filamento usado (g)", min_value=0.0)
 st.header("⚡ Energia")
 potencia = st.number_input("Potência da impressora (Watts)", value=130.0)
 horas = st.number_input("Horas de impressão", min_value=0.0)
-preco_kwh = st.number_input("Preço do kWh (€)", value=0.25)
+preco_kwh = st.number_input("Preço do kWh (€)", value=0.155)
 
 st.header("💰 Lucro")
 lucro_percentual = st.slider("Percentual de lucro (%)", 0, 300, 170)
